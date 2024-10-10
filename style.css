@@ -22,25 +22,45 @@ header {
     background-color: #edc7b7;  
     color: #ffffff;
     padding: 20px 0;
-    text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .logo {
-    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 70px; /* Ограничение высоты логотипа */
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 2rem;
+    color: white;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 nav {
-    margin-top: 15px;
+    display: flex;
 }
 
 nav a {
     color: #ac3b61;
     padding: 10px 15px;
-    margin: 0 5px;
+    margin-left: 20px;
     border-radius: 5px;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -314,18 +334,26 @@ footer p {
     color: #ffffff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     /* Мобильные устройства */
-    header {
-        padding: 10px 0;
+    .header-container {
+        flex-direction: column; /* Переключение на вертикальную ориентацию */
+        align-items: center;
     }
 
-    .logo {
+    .logo span{
         font-size: 1.5rem;
     }
 
+    nav {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+
     nav a {
         font-size: 1rem;
+        margin: 5px 0;
     }
 
     .hero h1 {
