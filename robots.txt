@@ -3,6 +3,6 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /cgi-bin/
 
-Allow: /
+Allow: /*.css$
 
-Sitemap: https://yuliasirbi.github.io/github.io/
+Sitemap: https://yuliasirbi.github.io/sitemap.xml
