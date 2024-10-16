@@ -201,6 +201,29 @@ nav a:hover {
 
 }
 
+/* Карта местности */
+
+.map-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ac3b61;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 /* Специальные предложения */
 .services{
     color: #c87793;
